@@ -9,15 +9,11 @@ export const isDark = computed({
     return colorSchema.value === 'auto' ? preferredDark.value : colorSchema.value === 'dark'
   },
   set(v: boolean) {
-    if (v === preferredDark.value)
-      colorSchema.value = 'auto'
-    else
-      colorSchema.value = v ? 'dark' : 'light'
-  },
+    if (v === preferredDark.value) colorSchema.value = 'auto'
+    else colorSchema.value = v ? 'dark' : 'light'
+  }
 })
 
-watch(
-  isDark,
-  v => document.documentElement.classList.toggle('dark', v),
-  { immediate: true },
-)
+watch(isDark, (v) => document.documentElement.classList.toggle('dark', v), {
+  immediate: true
+})

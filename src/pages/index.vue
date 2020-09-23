@@ -23,14 +23,14 @@
   </div>
 </template>
 
-<script setup lang='ts'>
-import { ref } from "vue";
-import { useRouter } from "vue-router";
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
-export const name = ref("");
+export const name = ref('')
 
-const router = useRouter();
+const router = useRouter()
 export const go = () => {
-  if (name.value) router.push(`/hi/${name.value}`);
-};
+  if (name.value) router.push(`/hi/${name.value}`)
+}
 </script>

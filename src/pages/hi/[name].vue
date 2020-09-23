@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <p>hi {{ name }}</p>
@@ -12,13 +11,13 @@
   </div>
 </template>
 
-<script setup='props' lang='ts'>
-import { useRouter } from "vue-router";
+<script setup="props" lang="ts">
+import { useRouter } from 'vue-router'
 
 declare const props: {
-  name: string;
-};
+  name: string
+}
 
-const router = useRouter();
-export const back = () => router.push("/");
+const router = useRouter()
+export const back = () => router.push('/')
 </script>

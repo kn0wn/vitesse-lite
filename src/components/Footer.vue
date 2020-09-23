@@ -2,16 +2,10 @@
   <div class="text-xl mt-6">
     <div class="icon-btn mx-2" @click="isDark = !isDark">DM</div>
 
-    <a
-      class="icon-btn mx-2"
-      href="https://github.com/antfu/vitesse"
-      target="_blank"
-    >
-      G
-    </a>
+    <a class="icon-btn mx-2" href="https://github.com/antfu/vitesse" target="_blank"> G </a>
   </div>
 </template>
 
-<script setup lang='ts'>
-export { isDark } from "/~/utils";
+<script setup lang="ts">
+export { isDark } from '/~/utils'
 </script>
