@@ -1,38 +1,24 @@
 
 <template>
   <div>
-    <p class="text-4xl">
-      <Icon class="iconify inline-block" icon="carbon:pedestrian" />
-    </p>
-    <p>
-      {{ t('intro.hi', {name}) }}
-    </p>
+    <p>hi {{ name }}</p>
     <p class="text-sm opacity-50">
-      <em>{{ t('intro.dynamic-route') }}</em>
+      <em>dynamic.route</em>
     </p>
 
     <div>
-      <button
-        class="btn m-3 text-sm mt-8"
-        @click="back"
-      >
-        {{ t('button.back') }}
-      </button>
+      <button class="btn m-3 text-sm mt-8" @click="back">Back</button>
     </div>
   </div>
 </template>
 
 <script setup='props' lang='ts'>
-import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
+import { useRouter } from "vue-router";
 
 declare const props: {
-  name: string
-}
+  name: string;
+};
 
-const router = useRouter()
-export const back = () => router.push('/')
-
-const { t } = useI18n()
-export { t }
+const router = useRouter();
+export const back = () => router.push("/");
 </script>

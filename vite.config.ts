@@ -1,12 +1,11 @@
-import path from 'path'
-import { UserConfig } from 'vite'
-import Voie from 'vite-plugin-voie'
-import PurgeIcons from 'vite-plugin-purge-icons'
-import ViteComponents from 'vite-plugin-components'
+import path from "path";
+import { UserConfig } from "vite";
+import Voie from "vite-plugin-voie";
+import ViteComponents from "vite-plugin-components";
 
 const alias = {
-  '/~/': path.resolve(__dirname, 'src'),
-}
+  "/~/": path.resolve(__dirname, "src"),
+};
 
 const config: UserConfig = {
   alias,
@@ -17,8 +16,7 @@ const config: UserConfig = {
       // as the `alias` changes the behavior of middlewares, you have to pass it to ViteComponents to do the resolving
       alias,
     }),
-    PurgeIcons(),
   ],
-}
+};
 
-export default config
+export default config;

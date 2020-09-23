@@ -1,32 +1,18 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/90765536-b3010780-e31c-11ea-9297-80eb28c4f192.png' alt='Vitess - Opinionated Vite Starter Template' width='600'/>
-</p>
+# Vitesse-lite
 
-<p align='center'>
-<em>Mocking up web app with <b>⚡️Vitesse</b></em>
-</p>
-
-<br>
-
-<p align='center'>
-<a href="https://vitesse.netlify.app/">Live Demo</a>
-</p>
+A lighter version of Antfu's Vue3 boilerplate, if you like this please support Antfu's work using the sponsor button on this page.
 
 <br>
 
 ## Features
 
-- ⚡️ [Vue3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 🗂 [File based routing](./src/pages)
 
 - 📲 [Components auto importing](./src/components)
 
 - 🎨 TailwindCSS with dark mode out-of-box
-
-- 😃 [Use icons from any icon sets, with no compromise](./src/components)
-
-- 🌍 [i18n ready](./locales)
 
 - 🦾 TypeScript, of course
 
@@ -40,17 +26,11 @@
 
 - [Tailwind CSS](https://tailwindcss.com/) - with built-in dark mode!
 
-### Icons
-
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [PurgeIcons](https://github.com/antfu/purge-icons) - bundles only the icons that you use
-
 ### Plugins
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [vite-plugin-voie](https://github.com/vamplate/vite-plugin-voie) - file system based routing
 - [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - components auto import
-- [vue-i18n](https://github.com/intlify/vue-i18n-next) - internationalization
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
 ### Coding Style
@@ -62,11 +42,8 @@
 
 - [TypeScript](https://www.typescriptlang.org/)
   - [Vue TypeScript Plugin](https://github.com/znck/vue-developer-experience/tree/master/packages/typescript-plugin-vue) - better type support for Vue
-- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [Netlify](https://www.netlify.com/) - deploy
 - [VS Code Extensions](./.vscode/extensions.json)
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=antfu.i18n-ally)
   - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
   - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -75,16 +52,16 @@
 
 ### Github Template
 
-[Create a repo from this template on Github](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on Github](https://github.com/kn0wn/vitesse-lite/generate).
 
 ### Clone to local
 
 If you prefer do to it manually with cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+npx degit kn0wn/vitesse-lite my-vitesse-lite-app
+cd vitesse-lite-app
+npm i
 ```
 
 ## Checklist
@@ -107,7 +84,7 @@ And, enjoy :)
 Just run and visit http://localhost:3000
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 ### Build
@@ -115,10 +92,10 @@ pnpm dev
 To build the App, run
 
 ```bash
-pnpm build
+npm run build
 ```
 
-And you will see the genrated file in `dist` that ready to be served.
+And you will see the generated file in `dist` that is ready to be served.
 
 ### Deploy on Netlify
 
@@ -126,6 +103,4 @@ Go to [Netlify](https://app.netlify.com/start) and select you clone, `OK` along 
 
 ## Why
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time. 
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks.
+I have removed certain items from the original Vitesse as I found I didn't need as much and was removing it whenever I created a new project.
