@@ -4,7 +4,7 @@ import Voie from 'vite-plugin-voie'
 import ViteComponents from 'vite-plugin-components'
 
 const alias = {
-  '/~/': path.resolve(__dirname, 'src')
+  '/@/': path.resolve(__dirname, 'src')
 }
 
 const config: UserConfig = {

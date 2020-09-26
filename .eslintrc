@@ -4,17 +4,14 @@
     "node": true,
     "es6": true
   },
+  "parser": "vue-eslint-parser",
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "parser": "@typescript-eslint/parser"
   },
-  "plugins": ["@typescript-eslint", "vue"],
+  "plugins": ["vue"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vue/recommended",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/vue"

@@ -5,7 +5,7 @@ Check out [`vite-plugin-voie`](https://github.com/vamplate/vite-plugin-voie) for
 
 ### Path Aliasing
 
-You can use `/~/` aliasing to `./src/` folder.
+You can use `/@/` aliasing to `./src/` folder.
 
 For example, instead of having
 
@@ -16,5 +16,5 @@ import { locales } from '../../../../messages'
 now you can use
 
 ```ts
-import { locales } from '/~/messages'
+import { locales } from '/@/messages'
 ```

@@ -11,13 +11,21 @@
   </div>
 </template>
 
-<script setup="props" lang="ts">
+<script lang="ts">
 import { useRouter } from 'vue-router'
+import { defineComponent } from 'vue'
 
-declare const props: {
-  name: string
-}
+export default defineComponent({
+  props: {
+    name: String
+  },
+  setup() {
+    const router = useRouter()
+    const back = () => router.push('/')
 
-const router = useRouter()
-export const back = () => router.push('/')
+    return {
+      back
+    }
+  }
+})
 </script>

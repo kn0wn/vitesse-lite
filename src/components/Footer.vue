@@ -6,6 +6,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
-export { isDark } from '/~/utils'
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { isDark } from '/@/utils'
+
+export default defineComponent({
+  setup() {
+    return { isDark }
+  }
+})
 </script>
