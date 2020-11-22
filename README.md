@@ -60,7 +60,7 @@ If you prefer do to it manually with cleaner git history
 
 ```bash
 npx degit kn0wn/vitesse-lite my-vitesse-lite-app
-cd vitesse-lite-app
+cd my-vitesse-lite-app
 npm i
 ```
 
