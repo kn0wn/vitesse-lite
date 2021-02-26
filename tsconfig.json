@@ -10,9 +10,16 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
+    ],
     "paths": {
-      "/@/*": ["src/*"]
+      "~/*": ["src/*"]
     }
   },
   "exclude": ["dist", "node_modules"]

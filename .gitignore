@@ -1,4 +1,7 @@
-node_modules
 .DS_Store
-dist
+.vite-ssg-dist
+.vite-ssg-temp
 *.local
+dist
+dist-ssr
+node_modules

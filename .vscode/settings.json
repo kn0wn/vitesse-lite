@@ -1,3 +1,6 @@
 {
-  "vetur.experimental.templateInterpolationService": true
+  "volar.tsPlugin": true,
+  "cSpell.words": ["Vitesse"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "volar.tsPluginStatus": false
 }
