@@ -1,3 +1,7 @@
+# ⚠ Archived ⚠
+
+This project has been archived, please use the latest version of [vitesse](https://github.com/antfu/vitesse)
+
 # Vitesse-lite
 
 A lighter version of Antfu's Vue3 boilerplate, if you like this please support Antfu's work using the sponsor button on this page.
